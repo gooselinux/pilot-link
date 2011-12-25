@@ -88,7 +88,7 @@ iconv -f windows-1252 -t UTF8 NEWS > NEWS.aux
 mv NEWS.aux NEWS
 
 %build
-autoreconf -is
+#autoreconf -is
 CFLAGS="%{optflags}" %configure \
   --with-python=no \
   --with-itcl=no \
